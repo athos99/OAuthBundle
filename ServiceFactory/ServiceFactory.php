@@ -56,7 +56,8 @@ class ServiceFactory
             return $this->serviceCache[$resourceOwnerName];
         }
 
-        $lowerResourceOwnerName = $string = strtolower(preg_replace('/(?<=\\w)(?=[A-Z])/',"_$1", $resourceOwnerName));
+//        $lowerResourceOwnerName = $string = strtolower(preg_replace('/(?<=\\w)(?=[A-Z])/',"_$1", $resourceOwnerName));
+        $lowerResourceOwnerName = $string = strtolower( $resourceOwnerName);
         $paramName = 'apinnecke_oauth.resource_owners.' . $lowerResourceOwnerName . '.callback_url';
         if (!$this->container->hasParameter($paramName)
             || !($callbackUrl = $this->container->getParameter($paramName))
