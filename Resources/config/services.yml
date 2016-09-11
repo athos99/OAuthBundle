@@ -26,7 +26,7 @@ parameters:
     apinnecke_oauth.service.harvest.class: OAuth\OAuth2\Service\Harvest
     apinnecke_oauth.service.heroku.class: OAuth\OAuth2\Service\Heroku
     apinnecke_oauth.service.instagram.class: OAuth\OAuth2\Service\Instagram
-    #apinnecke_oauth.service.jawboneup.class: OAuth\OAuth2\Service\JawboneUp
+    apinnecke_oauth.service.jawboneup.class: OAuth\OAuth2\Service\JawboneUp
     apinnecke_oauth.service.linkedin.class: OAuth\OAuth2\Service\LinkedIn
     apinnecke_oauth.service.mailchimp.class: OAuth\OAuth2\Service\Mailchimp
     apinnecke_oauth.service.microsoft.class: OAuth\OAuth2\Service\Microsoft
